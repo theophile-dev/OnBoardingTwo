@@ -1,0 +1,4 @@
+api_contact_post:
+    path:       /api/contact/add
+    controller: App\Controller\APIContactController::addContact
+    methods:    POST
