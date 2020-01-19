@@ -47,7 +47,7 @@ symfony server:start
 ## Test the API
 
 An easy way to test the API is to use a REST Client add-ons
-( ex for fixfox : https://addons.mozilla.org/fr/firefox/addon/restclient/ )
+( ex for firefox : https://addons.mozilla.org/fr/firefox/addon/restclient/ )
 
 ---
 
@@ -71,6 +71,7 @@ Get the departments :
 Endpoint : GET /api/departments
 ```
 json response body :
+
 [{"id":1,"name":"Direction","manager":{"id":1,"firstname":"didier","lastname":"dupont","email":"didier.dupont@mailthatdoesntexist.com","__initializer__":null,"__cloner__":null,"__isInitialized__":true}},
 {"id":2,"name":"Ressources Humaines","manager":{"id":2,"firstname":"paul","lastname":"lemaitre","email":"paul.lemaitre@mailthatdoesntexist.com","__initializer__":null,"__cloner__":null,"__isInitialized__":true}},
 {"id":3,"name":"Communication","manager":{"id":3,"firstname":"pierre","lastname":"bolt","email":"pierre.bolt@mailthatdoesntexist.com","__initializer__":null,"__cloner__":null,"__isInitialized__":true}},
