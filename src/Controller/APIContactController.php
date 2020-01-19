@@ -17,7 +17,7 @@ class APIContactController extends AbstractController
 
 
     /**
-     * Display the form, if the form is valid, store the contact data
+     * If the request is valid, store the contact data
      * and send an email using ContactNotification
      *
      * @param Request $request
