@@ -51,8 +51,11 @@ An easy way to test the API is to use a REST Client add-ons
 
 ---
 
-Send a new contact email
+Send a new contact email :
+
+Endpoint : POST /api/contact/add
 ```
+json request body :
  {
    "firstname": "marc",
    "lastname": "depont",
@@ -60,8 +63,20 @@ Send a new contact email
    "department" : 4,
    "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
  }
+
 ```
 
+Get the departments :
+
+Endpoint : GET /api/departments
+```
+json response body :
+[{"id":1,"name":"Direction","manager":{"id":1,"firstname":"didier","lastname":"dupont","email":"didier.dupont@mailthatdoesntexist.com","__initializer__":null,"__cloner__":null,"__isInitialized__":true}},
+{"id":2,"name":"Ressources Humaines","manager":{"id":2,"firstname":"paul","lastname":"lemaitre","email":"paul.lemaitre@mailthatdoesntexist.com","__initializer__":null,"__cloner__":null,"__isInitialized__":true}},
+{"id":3,"name":"Communication","manager":{"id":3,"firstname":"pierre","lastname":"bolt","email":"pierre.bolt@mailthatdoesntexist.com","__initializer__":null,"__cloner__":null,"__isInitialized__":true}},
+{"id":4,"name":"Marketing","manager":{"id":4,"firstname":"claire","lastname":"hawk","email":"claire.hawk@mailthatdoesntexist.com","__initializer__":null,"__cloner__":null,"__isInitialized__":true}}]
+
+```
 
 
 

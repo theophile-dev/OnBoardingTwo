@@ -2,3 +2,8 @@ api_contact_post:
     path:       /api/contact/add
     controller: App\Controller\APIContactController::addContact
     methods:    POST
+
+api_departments_get:
+    path:       /api/departments
+    controller: App\Controller\APIDepartmentController::list
+    methods:    GET
