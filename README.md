@@ -1,4 +1,4 @@
-# OnboardingOne
+# OnboardingTwo
 
 ## Setup
 
@@ -43,3 +43,25 @@ You can now start the server with the Symfony CLI :
 ```
 symfony server:start
 ```
+
+## Test the API
+
+An easy way to test the API is to use a REST Client add-ons
+( ex for fixfox : https://addons.mozilla.org/fr/firefox/addon/restclient/ )
+
+---
+
+Send a new contact email
+```
+ {
+   "firstname": "marc",
+   "lastname": "depont",
+   "email": "marc.dupont@gmail.com",
+   "department" : 4,
+   "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+ }
+```
+
+
+
+
